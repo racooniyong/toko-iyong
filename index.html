@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC | cihuy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href=""><img src="./images/200px-KFC_logo.svg.png" alt="kfc"></a>
+
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">about</a>
+        <a href="#">menu</a>
+        <a href="#">team</a>
+        <a href="#">resevation</a>
+        <a href="#">blog</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-bars" id="menu" onclick=""></i>
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-heart"></i>
+    </div>
+    </header>
+
+
+    <script type="text/javascript" >
+        let menu = document.querySelector('#menu')
+        let navbar = document.querySelector('.navbar')
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times')
+            navbar.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
